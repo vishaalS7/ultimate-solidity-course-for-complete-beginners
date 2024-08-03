@@ -8,6 +8,24 @@ pragma solidity ^0.8.0;
 // 4️⃣ Create a function to get result
 
 contract Calculator {
-    uint256 public result;
+    uint256 result;
+
+    function addNumber (uint _number) public {
+        result += _number; //result = result + _number
+    }
+
+    function subNumber (uint _number) public {
+        result -= _number;
+    }
+
+    function mulNum (uint _number) public {
+        result *= _number;
+    }
+
+    function get () public view returns (uint){
+        return result;
+    }
+
+
 
 }
